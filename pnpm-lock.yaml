@@ -1,0 +1,89 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      '@bablr/helpers':
+        specifier: ^0.21.4
+        version: 0.21.4
+
+packages:
+
+  '@bablr/agast-helpers@0.6.1':
+    resolution: {integrity: sha512-v4snumIYnLvoZrbr8vqYeBCT9QqMt76iQP2ub97OyTLD2L5v7m50dIggNBGRtZd93u63YxqzuAV+aIgoX9D6hQ==}
+
+  '@bablr/agast-vm-helpers@0.6.1':
+    resolution: {integrity: sha512-U2QFwL4maa720qFURGfyCKSaTqL3/YqJkFJO3L0E/vFL5GP9bANhxJmYwziwHCzo+js92ab2Gqh+KP5g9BnSrg==}
+
+  '@bablr/btree@0.1.1':
+    resolution: {integrity: sha512-EoWvmtFDex/VK8FT1F9P5psyVRWLIgP192ui3QoK+fXZmrklMZyQcfv9gdaKbI3wf7xd/YYDhVfJpVDyRDbQWQ==}
+
+  '@bablr/coroutine@0.1.0':
+    resolution: {integrity: sha512-dj9Q5C4TOkKqZCbXyWdsgdI37YgDJUIYA0lG6Mxe9gcykXBsuVc/1J63gylxgsm4H1O2vgV7ViY19H34MAwZkQ==}
+
+  '@bablr/helpers@0.21.4':
+    resolution: {integrity: sha512-q9cW4IxryrpBzZDJ9JKqyvXuDrFuS1KZEzdO+XhiNo8k2bW9llT+N55M02Hf3WOlpITmTmCw0EeuF0Pu28EZ/A==}
+
+  '@bablr/language_enhancer-debug-log@0.8.1':
+    resolution: {integrity: sha512-GNJIKYiCnLz4PLVLZ6/gSDP3TpCVUszysMJzp7+Zgx2RJEPCr0+b3EAGKxZowbUMMap1PcVNMouD+Q6HXfsYZg==}
+
+  '@bablr/strategy_enhancer-debug-log@0.7.2':
+    resolution: {integrity: sha512-/GCLKEdvaRgY+5IZSmEJcjBySovARpA4J/gH01XPcHBDwMA1oiEZjX7isJ4CRRBW+SlJSEuC0S1ESIfTGqbvpw==}
+
+  '@bablr/weak-stack@1.0.0':
+    resolution: {integrity: sha512-mbt0WcHJxqjwGbJRZBw9ip91wRfbBEVCV+2llk9tjONkLz7YnWGXb644eY/MYemk+fxHakNHPcgybCKSxct8dQ==}
+
+  '@iter-tools/imm-stack@1.1.0':
+    resolution: {integrity: sha512-5wCL8xt4sZ3v0buB3HrzqL2FTkaYB+ZVwkACo1G80zXWWG/8tSGgRiz7EQSkgDRrPQtpoGXRdOKW+GAVmG/Uyg==}
+
+  iter-tools-es@7.5.3:
+    resolution: {integrity: sha512-xj+T3W48RBrooJhafZZ3m8l0JQ/GBmRTcGfqJx4rA/IevwPRkff/919C8EgfQP3HPTnJnHVi+0KgeGKYjoKzvg==}
+
+snapshots:
+
+  '@bablr/agast-helpers@0.6.1':
+    dependencies:
+      '@bablr/btree': 0.1.1
+      '@bablr/coroutine': 0.1.0
+      '@bablr/weak-stack': 1.0.0
+      '@iter-tools/imm-stack': 1.1.0
+
+  '@bablr/agast-vm-helpers@0.6.1':
+    dependencies:
+      '@bablr/agast-helpers': 0.6.1
+
+  '@bablr/btree@0.1.1':
+    dependencies:
+      '@iter-tools/imm-stack': 1.1.0
+
+  '@bablr/coroutine@0.1.0': {}
+
+  '@bablr/helpers@0.21.4':
+    dependencies:
+      '@bablr/agast-helpers': 0.6.1
+      '@bablr/agast-vm-helpers': 0.6.1
+      '@bablr/coroutine': 0.1.0
+      '@bablr/language_enhancer-debug-log': 0.8.1
+      '@bablr/strategy_enhancer-debug-log': 0.7.2
+      '@iter-tools/imm-stack': 1.1.0
+      iter-tools-es: 7.5.3
+
+  '@bablr/language_enhancer-debug-log@0.8.1':
+    dependencies:
+      '@bablr/agast-helpers': 0.6.1
+
+  '@bablr/strategy_enhancer-debug-log@0.7.2':
+    dependencies:
+      '@bablr/agast-helpers': 0.6.1
+      '@bablr/coroutine': 0.1.0
+
+  '@bablr/weak-stack@1.0.0': {}
+
+  '@iter-tools/imm-stack@1.1.0': {}
+
+  iter-tools-es@7.5.3: {}

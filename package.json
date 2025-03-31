@@ -1,0 +1,14 @@
+{
+  "name": "bablr-helpers",
+  "version": "0.0.1",
+  "author": "Stirling Hostetter<stirlhoss@proton.me>",
+  "license": "MIT",
+  "homepage": "https://bablr.org",
+  "description": "A placeholder for bablr-helpers meant to prevent typo-squatting.",
+  "devDependencies": {
+    "@bablr/helpers": "^0.21.4"
+  },
+  "peerDependencies": {
+    "@bablr/helpers": "^0.21.4"
+  }
+}
